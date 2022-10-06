@@ -53,3 +53,44 @@ for (let item of arr) {
 for (let i in arr) {
     console.log(i + " " + arr[i]);
 }
+
+// Loop through each item in the array with its index
+arr.forEach((item, i) => console.log(i + " " + item));
+
+let obj1 = {
+    name: "Jill",
+    age: 85,
+    job: "Cactus Hunter",
+};
+
+console.log(obj1.name);
+console.log(obj1["name"]);
+
+obj1.job = "Barista";
+
+console.log(obj1);
+
+for (let key in obj1) {
+    let value = obj1[key];
+    console.log('${key}: ${value}');
+}
+
+console.log("hello " + obj1["name"] + " " + num);
+
+console.log(`hello ${obj1["name"]} ${num}`); // string template literal
+
+for (let i = 0; i < 10; i++) {
+    console.log()
+}
+
+if (x < 50) {
+    console.log("Above Average");
+}
+
+// ternary operator (aka inline if else)
+let y = (x > 50) ? "Abovr Average" : "Below Average";
+
+// traverse the DOM
+let example = document.getElementById("example");
+
+example.innerHTML += "Hello world!";
