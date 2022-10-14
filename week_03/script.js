@@ -24,18 +24,38 @@ d3.csv("covid.csv").then(data => {
                 .range([height - margin.bottom, margin.top]);
 
     const xAxis = g => g
-        .attr("transform", `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x))
+        .attr("transform", `translate(0,${height - margin.bottom+5})`)
+        .call(d3.axisBottom(x));
 
     const yAxis = g => g
-        .attr("transform", `translate(0,${margin.left - 5,0})`)
-        .call(d3.axisLeft(y))
+        .attr("transform", `translate(0,${margin.left - 5},0)`)
+        .call(d3.axisLeft(y));
 
     svg.append("g")
         .call(xAxis);
 
     svg.append("g")
         .call(yAxis);
+
+    let bar = svg.selectAll(".bar")
+        .append("g")
+        .data(data)
+        .join("g")
+        .attr("class", "bar");
+
+    bar.append("rect")
+        .attr("fill", "steelblue")
+        .attr("x", d => x(d.country))
+        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.cases))
+        .attr("height", d => y(0) - y(d.cases));
+
+    bar.append('text')
+    .text(d => d.cases)
+    .attr("x", d => x(d.country) + (x.bandwidth()/2))
+    .attr("y", d => y(d.cases) - 15)
+    .attr('text-anchor', 'middle')
+    ,style('fill', 'black')
 
 });
 
