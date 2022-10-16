@@ -1,4 +1,4 @@
-/* Bar chart for COVID country cases */
+/* Bar chart for the number of library visits */
 
 d3.csv("library_visits_jan22.csv").then(data => {
 
