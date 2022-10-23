@@ -17,6 +17,20 @@ The goal of this course is to provide an introduction to data visualization desi
 - Understand D3js structure
 - Develop visualizations with interactivity
 
-## Course Expectation
+## [Week 1](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_01)
+- Introduction and Data Selfie
 
-The goal of this course is to foster open thinking and creative exploration. Sometimes this course will require peer feedback. The intent is to make the students stronger visualization practitioners. Please come to class with an eager mind and a willingness to engage in discussion.
+## [Week 2](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_02)
+- Learning basics of HTML, JavaScript
+- Complete Project 1: “Dear Data”
+
+## [Week 3](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_03)
+- Create GitHub page
+- Create bar chart of visits to Chicago libraries
+- Submit data for final project
+
+## [Week 4](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_04)
+- Learn to create line and area charts in D3
+- Complete Project 2: Analyzing Existing Data Visualizations
+- Create a line chart for homework
+
