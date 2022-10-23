@@ -32,5 +32,5 @@ The goal of this course is to provide an introduction to data visualization desi
 ## [Week 4](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_04)
 - Learn to create line and area charts in D3
 - Complete Project 2: Analyzing Existing Data Visualizations
-- Create a line chart for homework
+- Create a [line chart](https://dustinmarshall.github.io/CAPP30239_FA22/week_04/homework.html) for homework
 
