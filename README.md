@@ -34,3 +34,7 @@ The goal of this course is to provide an introduction to data visualization desi
 - Complete [Project 2: Analyzing Existing Data Visualizations](https://dustinmarshall.github.io/CAPP30239_FA22/week_04/analyzing_existing_data_visualizations.pdf)
 - Create a [line chart](https://dustinmarshall.github.io/CAPP30239_FA22/week_04/homework.html) for homework
 
+## [Week 5](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_05)
+
+## [Week 6](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_06)
+- Create a [three figures](https://dustinmarshall.github.io/CAPP30239_FA22/week_06/hw/hw.html) for homework
