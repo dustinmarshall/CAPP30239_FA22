@@ -1,0 +1,34 @@
+# Load data
+```{r}
+df <- read.csv("a3cleanedonly2015.csv")
+```
+
+# Clean Data
+```{r}
+library('dplyr')
+
+chart1_data <- df %>%
+  mutate(shot = ifelse(Armed == "Gun", 1, 0), count = 1, state = State) %>%
+  group_by(state) %>%
+  summarise(percent_armed_gun = round(sum(shot) / sum(count), digits=2)) %>%
+  select(state, percent_armed_gun)
+
+write.csv(chart1_data,"a3cleanedonly2015_chart1.csv", row.names = FALSE, quote=FALSE)
+
+chart2_data <- df %>%
+  mutate(mentally_ill = ifelse(Mental_illness == "true", 1, 0), count = 1, state = State) %>%
+  group_by(state) %>%
+  summarise(percent_mentally_ill = round(sum(mentally_ill) / sum(count), digits=2)) %>%
+  select(state, percent_mentally_ill)
+
+write.csv(chart2_data,"a3cleanedonly2015_chart2.csv", row.names = FALSE, quote=FALSE)
+
+chart3_data <- df %>%
+  mutate(count = 1, race = Race) %>%
+  group_by(race) %>%
+  summarise(percent_race = round(sum(count) / nrow(df), digits=2)) %>%
+  na.omit(race) %>%
+  select(race, percent_race)
+
+write.csv(chart3_data,"a3cleanedonly2015_chart3.csv", row.names = FALSE, quote=FALSE)
+```

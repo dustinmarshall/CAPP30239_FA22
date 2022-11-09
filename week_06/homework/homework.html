@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deaths by Police Officers in the US in 2015</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Assistant', sans-serif;
+        }
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>% Deaths by Police Where Suspect is Armed With Gun, Grouped by State (US, 2015)</h1>
+        <p>
+            By looking at the percentage of deaths by police where the suspect is armed, grouped by State, we are able to draw connections between state-by-state differnces and how they might effect these statistics. This analysis could benefit from additional information regarding the gun laws in each state, which coulds shed light on why these differences exist. The data used in this histogram comes from <a href="https://github.com/tiffanyfrance/CAPP30239_FA22/blob/main/week_06/a3cleanedonly2015.json">The Washington Post</a>.
+        </p>
+        <div id="chart1"></div>
+    </div>
+    <div class="container">
+        <h1>% Deaths by Police Where Suspect is Mentally Ill, Grouped by State (US, 2015)</h1>
+        <p>
+            By looking at the percentage of deaths by police where the suspect is mentally ill, grouped by State, we are able to (in the same way that we were above) draw connections between state-by-state differences and how they might effect these statistics. This analysis could benefit from additional information regarding how state laws dictate the ways in which police are expected to interact with mentally ill suspects. The data used in this histogram comes from <a href="https://github.com/tiffanyfrance/CAPP30239_FA22/blob/main/week_06/a3cleanedonly2015.json">The Washington Post</a>.
+        </p>
+        <div id="chart2"></div>
+    </div>
+    <div class="container">
+        <h1>% Deaths by Police by Race (US, 2015)</h1>
+        <p>
+            By looking at the percentage of deaths by police, grouped by race, we are able to see how disproporionately some races are represented in police data, especially deaths. This analysis could benefit from additional data on national population percentages by race, to give us a better understanding of how disproportionate the representation actually is. The data used in this histogram comes from <a href="https://github.com/tiffanyfrance/CAPP30239_FA22/blob/main/week_06/a3cleanedonly2015.json">The Washington Post</a>.
+        </p>
+        <div id="chart3"></div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
+</body>
+</html>
