@@ -1,0 +1,37 @@
+response_mean,response_se,pre_post,concern
+-0.472719759,0.188304739,pre,"(Lack of) trust in 
+ government 
+ (p<0.01)"
+0.224227618,0.252446279,pre,"(Lack of) trust in 
+ healthcare workers 
+ (p<0.1)"
+-0.563237783,0.330851435,pre,"COVID-19 
+ is not real 
+ (p<0.1)"
+-0.865010273,0.166656353,pre,"God's protection 
+ (p<1)"
+0.468880295,0.062240177,pre,"Rumors 
+ (p<1)"
+0.307489431,0.056254105,pre,"Side effects 
+ (p<0.0001)"
+0.212609987,0.136262311,pre,"Vaccine 
+ effectiveness 
+ (p<1)"
+-0.127234717,0.169954861,post,"(Lack of) trust in 
+ government 
+ (p<0.01)"
+0.654193788,0.188228017,post,"(Lack of) trust in 
+ healthcare workers 
+ (p<0.1)"
+-0.150076142,0.350441462,post,"COVID-19 
+ is not real 
+ (p<0.1)"
+-0.80841083,0.165211848,post,"God's protection 
+ (p<1)"
+0.519332359,0.060339775,post,"Rumors 
+ (p<1)"
+0.542646338,0.052305685,post,"Side effects 
+ (p<0.0001)"
+0.177838843,0.133494667,post,"Vaccine 
+ effectiveness 
+ (p<1)"

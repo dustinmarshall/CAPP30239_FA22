@@ -1,7 +1,13 @@
 # Load data
 ```{r}
-df <- read.csv("a3cleanedonly2015.csv")
+df <- read.csv('owid-covid-data.csv')
 ```
+
+```{r}
+chart1_data <- df %>%
+  mutate(date = anytime::anydate(Date))
+```
+
 
 # Clean Data
 ```{r}

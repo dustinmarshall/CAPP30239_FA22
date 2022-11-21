@@ -38,3 +38,11 @@ The goal of this course is to provide an introduction to data visualization desi
 
 ## [Week 6](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_06)
 - Create [three figures](https://dustinmarshall.github.io/CAPP30239_FA22/week_06/homework/homework.html) for homework
+
+## [Week 7](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_07)
+
+## [Week 8](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_08)
+
+## [Week 9](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_09)
+
+## [Final Project](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/final_project)
