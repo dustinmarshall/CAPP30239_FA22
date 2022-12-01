@@ -1,9 +1,19 @@
 (function figure_3() {
 var svg = d3.select("svg"),
-    margin = {top: 20, right: 20, bottom: 30, left: 40},
+    margin = {top: 20, right: 100, bottom: 30, left: 40},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom,
-    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    svg.append("circle").attr("cx",860).attr("cy",130).attr("r", 6).style("fill", "#eeeeee")
+    svg.append("circle").attr("cx",860).attr("cy",160).attr("r", 6).style("fill", "#c6daef")
+    svg.append("circle").attr("cx",860).attr("cy",190).attr("r", 6).style("fill", "#6aaed6")
+    svg.append("circle").attr("cx",860).attr("cy",220).attr("r", 6).style("fill", "#2270b5")
+    svg.append("circle").attr("cx",860).attr("cy",250).attr("r", 6).style("fill", "#0a306b")
+    svg.append("text").attr("x", 870).attr("y", 130).text("YouTube").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", 870).attr("y", 160).text("Twitter").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", 870).attr("y", 190).text("Instagram").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", 870).attr("y", 220).text("Pinterest").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", 870).attr("y", 250).text("Facebook").style("font-size", "15px").attr("alignment-baseline","middle");
 
 var x0 = d3.scaleBand()
     .rangeRound([0, width])
@@ -59,26 +69,5 @@ d3.csv("statcounter-socialmedia-data.csv", function(d, i, columns) {
       .attr("fill", "#000")
       .attr("font-weight", "bold")
       .attr("text-anchor", "start");
-
-  var legend = g.append("g")
-      .attr("font-family", "sans-serif")
-      .attr("font-size", 10)
-      .attr("text-anchor", "end")
-    .selectAll("g")
-    .data(keys.slice().reverse())
-    .enter().append("g")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-  legend.append("rect")
-      .attr("x", width - 19)
-      .attr("width", 19)
-      .attr("height", 19)
-      .attr("fill", z);
-
-  legend.append("text")
-      .attr("x", width - 34)
-      .attr("y", 9.5)
-      .attr("dy", "0.32em")
-      .text(function(d) { return d; });
 });
 })();
