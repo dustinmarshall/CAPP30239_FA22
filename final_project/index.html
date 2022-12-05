@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Final Project</title>
+  <style>
+    body {
+      font-family: Roboto, sans-serif;
+    }
+    h1 {
+      font-size: 30px;
+      margin: 20px 0;
+      text-align: center;
+      color: #eeeeee;
+    }
+    h2 {
+      font-size: 22px;
+      margin: 20px 0;
+      text-align: center;
+      color: #eeeeee;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #eeeeee;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      text-align: left;
+      color: #eeeeee;
+    }
+    .section {
+      margin: 30px 0;
+      text-align: left;
+      color: #eeeeee;
+
+    }
+    body {
+      background-color: steelblue;
+    }
+    a {
+      color: #012e49;
+    }
+  </style>
+</head>
+<body>
+  <h1>Can Chatbots Increase COVID-19 Vaccinations in Kenya and Nigeria?</h1>
+  <h2>Dustin Marshall, MSCAPP '23</h2>
+  <h2>CAPP30239 Final Project</h2>
+
+  <div class="section">
+    <p>
+      Despite global progress on COVID-19 vaccination rates, Africa's vaccination coverage has stagnated and now trails the rest of the world substantially. This puts the continent’s 1.2 billion people at a higher risk of future outbreaks from the virus. Despite vaccine supply being abundant, survey research indicates that the lack of cases in Africa may have led people to feel less fearful of the virus, and as a result, less willing to get vaccinated. 
+    </p>
+    <p>
+      The chloropleth map below depicts the vaccination rate, country by country, with the darker the color shading, the higher the vaccination rate (as indicated by the legend on the left). As you can see, countries across Africa lag significantly behind the rest of the world. As it stands, most countries in Africa are far from reaching the year-end target of 70% of their population. In fact, only 30% of the continent's population has had at least one shot of a COVID vaccine, which is in stark contrast with the 68% global average. Public health messaging interventions are going to be needed if countries are to have any chance of getting close to meeting their year-end targets.
+    </p>
+    <p>
+      A note on the design process for this figure: this figure was adapted from the D3 graph gallery. I changed the color scheme, input data, dimensions, text color, and country border widths, all to better fit my project's theme and style. I also wrapped the code in a function so that it could be called from an html file. I originally had a tooltip with a hover-over component, but found that the feature didn't actually add anything of value--in my opinion--so I opted to remove it.
+    </p>
+    <p> 
+      Data Source: This figure uses data gathered from <a href="https://ourworldindata.org/">Our World in Data.</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Global Vaccination Rates (%)</h2>
+    <svg id="fig_vaccinations" width="1400" height="600"></svg>
+  </div>
+
+  <div class="section">
+    <p>
+      Since 2000, the growth in households' access to the internet via mobile smartphones in Africa has grown from less than 2% to nearly 80%. This is a remarkable achievement, and it has the potential to transform many aspects of life in Africa, including education, health care, and economic development. For example, access to the internet allows people to access a wealth of information and resources, such as educational materials, health information, and job opportunities. It also enables people to connect with others, share ideas and experiences, and participate in the global economy. Unfortunately, despite this growth in access to the internet, there have been comparatively modest increases in various key development indicators. Nevertheless, innovative policymakers, businesses, and researchers continue to look for ways to leverage this increased access to the internet to make up the gaps and improve the lives of people in Africa.
+    </p>
+    <p>
+      The grouped bar chart below depicts the preferred social media platforms of individuals (as indicated by the legend on the right), grouped by region. As you can see, preferences are split between Facebook, Pinterest, Instagram, Twitter, and Youtube, with Facebook being the most favored platform by a massive margin. It's worth noting that the popularity in Africa is the second highest of the world regions, with 78.9% of respondents identifying it as their favorite social media platform.
+    </p>
+    <p>
+      A note on the design process for this figure: this figure was adapted from the D3 graph gallery. I changed color scheme, input data, dimensions, text color, bar width, and added a legend. I tried to add gridlines to better show the differentiation between the graphs, but was unable to get them to show up properly and decided to move on without them.
+    </p>
+    <p> 
+      Data Source: This figure uses data gathered from <a href="https://gs.statcounter.com/social-media-stats/all/africa">StatCounter GlobalStats.</a>
+    </p>
+  </div>
+  
+  <div class="section">
+    <h2>Global Social Media Usage (%)</h2>
+    <svg id="fig_socialmedia" width="1400" height="400"></svg>
+  </div>
+
+  <div class="section">
+    <p>
+      This research project, led by Leah Rosenzweig (Development Innovation Lab) and Molly Offer-Westort (University of Chicago), is an example of efforts to leverage mobile technology to increase vaccinatination rates in Africa. The research uses an online experimental Facebook chatbot to study the effectiveness of different messaging strategies on increasing vaccination rates in Kenya and Nigeria. The study included a total of 22,014 social media users who were randomly assigned to one of three conditions. In the first condition, users engaged with a chatbot that elicited their concerns about the COVID-19 vaccine and provided targeted messaging in response to those concerns. In the second condition, users engaged with a chatbot that gave a general public service announcement (PSA) about the importance of the COVID-19 vaccine. In the third condition, users engaged with a chatbot to answer survey questions, with no additional information.
+    </p>
+    <p>
+      Despite Facebook's popularity, it's to be expected that research drawing on its user base is not going to entirely representative of the country as a whole. So, in an effort to better understand how representative the study sample is of the populations of both countries, I cleaned and extracted averages across 7 key descriptive statistics generated from an intake survey given to respondents in the study, then compared them to the same descriptive statistics pulled from the most recent round of the Afrobarometer survey. The results are collected into the two heatmaps below, with the comparable statistics lined up in parallel and the higher percentages being indicated by darker shading.
+    </p>
+    <p>
+      A note on the design process for these figures: this figure was adapted from the D3 graph gallery. I changed color scheme, input data, dimensions, text color, and added text to each box with the percentage to give the user more information than the sharing provides by itself. I originally had a tooltip with a hover-over component, but found that the feature didn't actually add anything of value-in my opinion-so I opted to remove it.
+    </p>
+    <p> 
+      Data Source: These figures use original data gathered for an ongoing <a href="https://osf.io/mgyxu/">research project</a> led by Leah R. Rosenzweig (Development Innovation Lab) and Assistant Professor Molly Offer-Westort (University of Chicago) testing the use of personalized online messaging interventions to increase COVID-19 vaccine acceptance in Kenya and Nigeria.</h3>
+    </p>
+  </div>
+
+  <div style="display: flex; flex-direction: row">
+    <div class="section">
+      <h2>Assessing the Representativeness of the Nigeria Study Sample</h2>
+      <div id="fig_nigeriadescriptives"></div>
+    </div>
+    <div class="section">
+      <h2>Assessing the Representativeness of the Kenya Study Sample</h2>
+      <div id="fig_kenyadescriptives"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p>
+      After running the intervention and surveying the respondents before and after regarding their vaccine willingness and intentions, researchers found that both the concern-addressing and PSA chatbots were effective at increasing vaccine willingness and intentions compared to the control condition, with the concern-addressing chatbot having a slightly greater effect. These findings suggest that using tailored, concern-based messaging may be a more effective approach than using generic PSAs to increase vaccine uptake in Africa.
+    </p>
+    <p>
+      To illustrate these effects, the two grouped bar charts below separate out the vaccine willingness and intentions of individuals before and after the intervention (as indicated by the legend on the right), by concern. As is shown below, in both the Nigeria and Kenys samples, concerns about (lack of) trust in government and side effects were the most amenable to treatment, since in both cases, the differences in means were respectively 99% (p<.01) and 99.9% (p<.001) likely due to the intervention and not chance.
+    </p>
+    <p>
+      A note on the design process for this figure: this figure was adapted from the D3 graph gallery. I changed color scheme, input data, dimensions, text color, bar width, and added a legend. I purposefully decided not to include the y-axis because the units were mostly unseless, only the pre/post difference matters. I tried to add gridlines to better show the differentiation between the graphs, but was unable to get them to show up properly and decided to move on without them. I also originally tried to create these as grouped box plots, but was unable to get them to work properly, then I tried to remedy this by adding error bars to the bar charts, but was unable to get that to work either (the fact that there were groups made things difficult), so I settled on including the p-values with the x-axis labels.
+    </p>
+    <p> 
+      Data Source: These figures use original data gathered for an ongoing <a href="https://osf.io/mgyxu/">research project</a> led by Leah R. Rosenzweig (Development Innovation Lab) and Assistant Professor Molly Offer-Westort (University of Chicago) testing the use of personalized online messaging interventions to increase COVID-19 vaccine acceptance in Kenya and Nigeria.</h3>
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>Vaccine Willingness Pre/Post Intervention, Grouped by Concern (Kenya)</h3>
+    <svg id="fig_willkenya" width="1400" height="400"></svg>
+    <h3>Vaccine Willingness Pre/Post Intervention, Grouped by Concern (Nigeria)</h3>
+    <svg id="fig_willnigeria" width="1400" height="400"></svg>
+  </div>
+
+  <div class="section">
+    <h2>Conclusion</h2>
+    <p>
+      The research conducted using online experimental Facebook chatbots found that, compared to a control group, both the PSA chatbot and the concern-addressing chatbot were able to increase vaccine willingness and intentions among social media users in Kenya and Nigeria. The PSA chatbot, which provided a general public service announcement about the importance of the COVID-19 vaccine, was slightly more effective than the control group in increasing these measures. However, the concern-addressing chatbot, which elicited specific concerns about the vaccine and provided tailored responses, was even more effective at increasing vaccine willingness and intentions. These results suggest that policymakers may wish to consider using communication techniques that address specific concerns and provide tailored messaging, rather than relying on generic public service announcements, in order to increase COVID-19 vaccine uptake. This approach may be particularly effective in regions like Africa, where vaccine hesitancy and misinformation are prevalent. By addressing the specific concerns of individuals and providing them with accurate and targeted information, policymakers may be able to overcome some of the barriers to vaccination and protect more people from the threat of COVID-19.
+    </p>
+  </div>
+
+  <div class="section">
+  </div>
+
+  </div>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+  <script src="fig_vaccinations.js"></script>
+  <script src="fig_socialmedia.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="fig_kenyadescriptives.js"></script>
+  <script src="fig_nigeriadescriptives.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="fig_willkenya.js"></script>
+  <script src="fig_willnigeria.js"></script>
+</body>
+</html>
