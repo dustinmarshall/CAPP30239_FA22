@@ -46,3 +46,4 @@ The goal of this course is to provide an introduction to data visualization desi
 ## [Week 9](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/week_09)
 
 ## [Final Project](https://github.com/dustinmarshall/CAPP30239_FA22/tree/main/final_project)
+ - <a href="https://watch.screencastify.com/v/XLusyUxAr1nBUedPzzj3">Video Presentation</a>
